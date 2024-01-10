@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Nonanas",
+    "version": "0.1",
+    "description": "Blockieren von Pizza Hawaii listings auf Bestellseiten.",
+    "icons": {
+        "128": "128_pineapple.png",
+        "48": "48_pineapple.png",
+        "16": "16_pineapple.png"
+    }
+}
