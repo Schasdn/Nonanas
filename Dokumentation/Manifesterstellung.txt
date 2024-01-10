@@ -1,0 +1,8 @@
+Manifestdateien werden als JSON File geschrieben.
+Es gibt mehrere versionen der Manifestdateien. 
+Chrome erlaubt mitlerweile nur noch die Manifest Version 3 weswegen diese momentan genutzt wird.
+Für andere Browser wird die Version 2 benutzt da die Verwendung von Manifest v3 zu Problemen mit den Berechtigungen führt.
+
+In den Manifestdateien befinden sich Informationen zum Addon wie z.B. der Name, die Version und die Beschreibung.
+Desweiteren befinden sich die Verlinkungen zu den Icons in dieser Datei.
+Unter den Element "content_scripts" befinden sich die Verlinkungen auf die Scripte und die Seiten auf welchen diese ausgeführt werden.
