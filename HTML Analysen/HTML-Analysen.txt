@@ -12,3 +12,17 @@ HTML-Analyse Lieferando
 •	Produkte sind in li Containern untergebracht
 •	diese können nach "Pizza Hawaii" durchsucht werden
 •	Durch matching kann das Element entfernt werden
+
+HTML-Code Analyse Call-a-Pizza
+•	P-Hawaii in Item List als list item mit Tag: „pizza,pizza_klassiker,produkte_a__z“ 
+•	Name ist in div class=name als Text gespeichert
+
+HTML-Code Analyse Papa Johns
+•	Pizzen sind in div container gespeichert
+•	Name ist in data-article-number als headline h2 gespeichert
+
+HTML-Code Analyse World of Pizza
+•	Pizzen sind in div container gespeichert
+•	Pizza Hawaii hat den data-article-number 711 nach welcher gefiltert werden kann
+•	Außerdem „Hawaii“ als Text in span
+•	Danach kann gefiltert werden
