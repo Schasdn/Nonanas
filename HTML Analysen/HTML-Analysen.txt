@@ -8,3 +8,7 @@ HTML-Analyse Freddy Fresh Pizza
 •	Pizza Hawaii hat die Flag „data-searchtext“ mit dem Wert „hawaii mit pizzasoße, hinterkochschinken, ananas und echtem gouda“
 •	Durch matching dieser Flag kann das Element entfernt werden
 
+HTML-Analyse Lieferando
+•	Produkte sind in li Containern untergebracht
+•	diese können nach "Pizza Hawaii" durchsucht werden
+•	Durch matching kann das Element entfernt werden
