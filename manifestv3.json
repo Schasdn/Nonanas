@@ -7,5 +7,11 @@
         "128": "128_pineapple.png",
         "48": "48_pineapple.png",
         "16": "16_pineapple.png"
-    }
+    },
+    "content_scripts": [
+        {
+            "js": ["lieferando.js"],
+            "matches": ["https://www.lieferando.de/*"]
+        }
+    ]
 }
