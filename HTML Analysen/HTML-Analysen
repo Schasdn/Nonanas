@@ -1,0 +1,10 @@
+HTML-Analyse Dominos:
+•	Produkte sind in Div Containern untergebracht 
+•	Pizza Hawaii hat die Flag „data-testid“ mit dem Wert „menu-scene.pizza.Product.PWAI“
+•	Durch matching dieser Flag kann das Element entfernt werden
+
+HTML-Analyse Freddy Fresh Pizza
+•	Produkte sind in Div Containern untergebracht
+•	Pizza Hawaii hat die Flag „data-searchtext“ mit dem Wert „hawaii mit pizzasoße, hinterkochschinken, ananas und echtem gouda“
+•	Durch matching dieser Flag kann das Element entfernt werden
+
