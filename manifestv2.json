@@ -16,6 +16,14 @@
         {
             "js": ["dominos.js"],
             "matches": ["https://bestellen.dominos.de/menu/*"]
+        },
+        {
+            "js": ["call_a_pizza.js"],
+            "matches": ["https://www.call-a-pizza.de/*"]
+        },
+        {
+            "js": ["papajohns.js"],
+            "matches": ["https://webshop.papajohns.de/*"]
         }
     ]
 }
