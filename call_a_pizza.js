@@ -8,8 +8,8 @@ document.addEventListener('scroll', function(){
 
     for (let i=0; i < list.length; i++)
     {
-        const a = list[i].getElementsByTagName('a');
-        var name = a.innerhtml;
+        const item = list[i];
+        const name = item.innerHTML;
 
         if (name.includes("Hawaii")){
             item.remove();
