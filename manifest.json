@@ -24,6 +24,10 @@
         {
             "js": ["papajohns.js"],
             "matches": ["https://webshop.papajohns.de/*"]
+        },
+        {
+            "js": ["worldofpizza.js"],
+            "matches": ["https://webshop.world-of-pizza.de/*"]
         }
     ]
 }
