@@ -28,6 +28,10 @@
         {
             "js": ["worldofpizza.js"],
             "matches": ["https://webshop.world-of-pizza.de/*"]
+        },
+        {
+            "js": ["universal.js"],
+            "matches": ["<all_urls>"]
         }
     ]
 }
