@@ -28,6 +28,10 @@
         {
             "js": ["worldofpizza.js"],
             "matches": ["https://webshop.world-of-pizza.de/*"]
+        },
+        {
+            "js": ["freddy_fresh.js"],
+            "matches": ["https://www.freddy-fresh.de/*"]
         }
     ]
 }

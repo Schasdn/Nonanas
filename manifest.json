@@ -30,6 +30,10 @@
             "matches": ["https://webshop.world-of-pizza.de/*"]
         },
         {
+            "js": ["freddy_fresh.js"],
+            "matches": ["https://webshop.freddy-fresh.de/*"]
+        },
+        {
             "js": ["universal.js"],
             "matches": ["<all_urls>"]
         }
