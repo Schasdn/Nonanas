@@ -3,7 +3,7 @@ if(window.location.href.includes("lieferando") || window.location.href.includes(
 
 }
 else{
-    if(window.location.href.match("[pP]izza(.||\s)[hH]awaii")){
+    if(window.location.href.match("[pP][iI][zZ][zZ][aA](.||\s)[hH][aA][wW][aA][iI][iI]")){
         console.log("Wihwuh Pizza Hawaii in URL endeckt")
         if(!window.location.href.includes("google")){
             window.open("https://nonanas.schasdn.de","_self")
@@ -28,11 +28,17 @@ else{
 
         for(let u = 0; u < bodylist.length; u++){
             //console.log(u);
-            if(bodylist[u].innerText.includes("Pizza Hawaii") && !bodylist[u].innerHTML.includes("<")){
-                //console.log(bodylist[u]);
-                //console.log(bodylist[u].innerText);
-                bodylist[u].innerText = bodylist[u].innerText.replaceAll("Pizza Hawaii", "[REDACTED]");
-            }
+            
+            if(bodylist[u].innerText != null && bodylist[u].innerHTML != null){
+
+                if(bodylist[u].innerText.match("[pP][iI][zZ][zZ][aA](.||\s)[hH][aA][wW][aA][iI][iI]") && !bodylist[u].innerHTML.includes("<")){
+                    //console.log("lit")
+                    //console.log(bodylist[u]);
+                    //console.log(bodylist[u].innerText);
+                    bodylist[u].innerText = bodylist[u].innerText.replaceAll(/[pP][iI][zZ][zZ][aA](.||\s)[hH][aA][wW][aA][iI][iI]/g, "[REDACTED]");
+                    //bodylist[u].innerText = bodylist[u].innerText.replaceAll("PIZZA HAWAII", "[REDACTED]");
+                }
+        }
         }
 
     }
