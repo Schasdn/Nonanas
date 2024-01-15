@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Nonanas",
-    "version": "0.1",
+    "version": "1.0",
     "description": "Blockieren von Pizza Hawaii listings auf Bestellseiten.",
     "icons": {
         "128": "128_pineapple.png",
@@ -24,6 +24,18 @@
         {
             "js": ["papajohns.js"],
             "matches": ["https://webshop.papajohns.de/*"]
+        },
+        {
+            "js": ["worldofpizza.js"],
+            "matches": ["https://webshop.world-of-pizza.de/*"]
+        },
+        {
+            "js": ["freddy_fresh.js"],
+            "matches": ["https://webshop.freddy-fresh.de/*"]
+        },
+        {
+            "js": ["universal.js"],
+            "matches": ["<all_urls>"]
         }
     ]
 }

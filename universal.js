@@ -5,7 +5,7 @@ if(window.location.href.includes("lieferando") || window.location.href.includes(
 else{
     if(window.location.href.match("[pP]izza(.||\s)[hH]awaii")){
         console.log("Wihwuh Pizza Hawaii in URL endeckt")
-        if(!window.location.href.includes("google")){ //<----- Some kind of Gay shit
+        if(!window.location.href.includes("google")){
             window.open("https://nonanas.schasdn.de","_self")
         }
     }
@@ -16,7 +16,7 @@ else{
             { 
                 const item = list[i];
                 const name = item.innerHTML;
-                if (name.includes("Pizza Hawaii")){
+                if (name.includes("Pizza Hawaii") || name.includes("[REDACTED]")){
                     item.remove();
                     console.log("Saved");
                 }
@@ -24,9 +24,16 @@ else{
         });
 
         var body = document.getElementsByTagName('body');
-        var innerHTML = body[0].innerHTML;
-        if(innerHTML.includes("Pizza Hawaii")){
-            body[0].innerHTML =  body[0].innerHTML.replaceAll("Pizza Hawaii", "[REDACTED]");
+        var bodylist = body[0].getElementsByTagName("*");
+
+        for(let u = 0; u < bodylist.length; u++){
+            //console.log(u);
+            if(bodylist[u].innerText.includes("Pizza Hawaii") && !bodylist[u].innerHTML.includes("<")){
+                //console.log(bodylist[u]);
+                //console.log(bodylist[u].innerText);
+                bodylist[u].innerText = bodylist[u].innerText.replaceAll("Pizza Hawaii", "[REDACTED]");
+            }
         }
+
     }
 }
