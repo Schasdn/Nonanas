@@ -27,16 +27,17 @@ else{
         var bodylist = body[0].getElementsByTagName("*");
 
         for(let u = 0; u < bodylist.length; u++){
-            //console.log(u);
+            console.log(u);
             
             if(bodylist[u].innerText != null && bodylist[u].innerHTML != null){
 
-                if(bodylist[u].innerText.match("[pP][iI][zZ][zZ][aA](.||\s)[hH][aA][wW][aA][iI][iI]") && !bodylist[u].innerHTML.includes("<")){
-                    //console.log("lit")
+                if(bodylist[u].innerText.match("([pP][iI][zZ][zZ][aA](.||\s)[hH][aA][wW]([aA]|[eE])[iI]+|[hH][aA][wW]([aA]|[eE])[iI]+(.||\s)[pP][iI][zZ][zZ][aA])") && !bodylist[u].innerHTML.includes("<")){
+                    console.log("lit")
                     //console.log(bodylist[u]);
                     //console.log(bodylist[u].innerText);
-                    bodylist[u].innerText = bodylist[u].innerText.replaceAll(/[pP][iI][zZ][zZ][aA](.||\s)[hH][aA][wW][aA][iI][iI]/g, "[REDACTED]");
-                    //bodylist[u].innerText = bodylist[u].innerText.replaceAll("PIZZA HAWAII", "[REDACTED]");
+                    bodylist[u].innerText = bodylist[u].innerText.replaceAll(/([pP][iI][zZ][zZ][aA](.||\s)[hH][aA][wW]([aA]|[eE])[iI]+|[hH][aA][wW]([aA]|[eE])[iI]+(.||\s)[pP][iI][zZ][zZ][aA])/g, "[REDACTED]");
+                    
+                    //bodylist[u].innerText = bodylist[u].innerText.replaceAll("PIZZA HAWAII", "[REDACTED]");                    
                 }
         }
         }
