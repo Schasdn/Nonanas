@@ -4,9 +4,12 @@ document.addEventListener('scroll', function(){
     { 
         const item = list[i];
         const data_testid = item.getAttribute("data-testid");
-        if (data_testid == "menu-scene.pizza.Product.PWAI"){
-            item.remove();
-            console.log("Saved");
+        if(data_testid != null){
+            //console.log(data_testid);
+            if (data_testid.includes("PWAI")){
+                item.remove();
+                console.log("Saved");
+            }
         }
     }
 });
